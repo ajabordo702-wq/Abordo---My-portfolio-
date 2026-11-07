@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>Anthony James Abordo | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">AJ<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">COMPUTER SCIENCE STUDENT · CREATIVE THINKER</p>
+        <h1>Hello, I'm<br><span>Anthony James</span><br>Abordo.</h1>
+        <p class="intro">I’m a Computer Science student who enjoys creating digital experiences through programming, design, photography, and editing.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore my work</a>
+          <a class="button secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="AJ initials profile placeholder">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="monogram">AJ<span>.</span></div>
+        <p>CREATIVE · CURIOUS · ALWAYS LEARNING</p>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading"><p class="eyebrow">GET TO KNOW ME</p><h2>About <span>Me</span></h2></div>
+      <div class="about-card">
+        <p>Hi! I’m Anthony James Abordo, a Computer Science student with an interest in technology and creativity. I enjoy learning new skills, solving problems, and turning ideas into meaningful projects.</p>
+        <p>This portfolio is where I share my school works, personal projects, and creative outputs as I continue to grow.</p>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading"><p class="eyebrow">WHAT I CAN DO</p><h2>My <span>Skills</span></h2></div>
+      <div class="skill-grid">
+        <article class="skill-card"><b>01</b><h3>Programming</h3><p>Learning to build websites, applications, and useful digital solutions.</p></article>
+        <article class="skill-card"><b>02</b><h3>Graphic Design</h3><p>Creating visual materials with attention to layout and presentation.</p></article>
+        <article class="skill-card"><b>03</b><h3>Photo & Video Editing</h3><p>Editing visual content for clear and engaging storytelling.</p></article>
+        <article class="skill-card"><b>04</b><h3>Photography</h3><p>Capturing moments, details, and creative perspectives.</p></article>
+        <article class="skill-card"><b>05</b><h3>Creative Thinking</h3><p>Exploring ideas and finding thoughtful ways to solve problems.</p></article>
+        <article class="skill-card"><b>06</b><h3>Teamwork</h3><p>Collaborating, communicating, and contributing to group projects.</p></article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading"><p class="eyebrow">A SELECTION OF MY WORK</p><h2>My <span>Projects</span></h2><p class="section-note">School activities, programming projects, designs, and other creative outputs.</p></div>
+      <div class="project-grid" id="projectGrid"></div>
+      <p class="upload-note"><strong>Want to add a project?</strong> Upload its image or file to your GitHub repository, then add its details in <code>projects.js</code>. The included README has phone-friendly steps.</p>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading"><p class="eyebrow">LET'S CONNECT</p><h2>Contact <span>Me</span></h2></div>
+      <div class="contact-card"><div><h3>Have a project or opportunity in mind?</h3><p>Feel free to reach out. I’d be happy to connect.</p></div><a class="button primary" href="mailto:your-email@example.com">Email me ↗</a></div>
+      <p class="edit-hint">Before publishing, replace the sample email address with your own in <code>index.html</code>.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home">AJ<span>.</span></a><p>© <span id="year"></span> Anthony James Abordo. Built with curiosity.</p><a href="#home">Back to top ↑</a></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
